@@ -1,0 +1,49 @@
+@import '~sass/variables';
+
+.herobanner {
+  position:relative;
+}
+
+.bannertext {
+  text-align: center;
+  width:40%;
+  max-width: $max-width * 0.4;
+}
+
+.bannerimg {
+  background-image: url('/assets/images/gobirthday.jpg');
+  background-position-x: 50%;
+  background-position-y: 50%;
+  height: 600px;
+  width: 60%;
+  margin:0;
+}
+
+.floatingimg {
+  background-image: url('/assets/images/pokemonstarts.png');
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  /*top: 40%;
+  left: 30%;*/
+  bottom: 10%;
+  right: 5%;
+  background-position-x:50%;
+  background-position-y:25%;
+  height: 300px;
+  width: 65%;
+  min-width: 700px;
+}
+
+@media (max-width:$md - 1) {
+  .bannertext {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .bannerimg {
+    height: 350px;
+    width: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+@import '~sass/_variables';
+
+.main-carousel {
+	min-height: 250px;
+}
+.carousel-cell {
+	margin: 0 5px;
+}
+.carouselimg {
+	max-height: 318px;
+	max-width: 318px;
+}
+.carouselcontainer {
+	margin-top: 40px;
+	padding: 0 40px;
+}
+.cardtext {
+	text-align: center;
+}
+
+.ccbtn {
+	min-width: 70%;
+	margin: 5px;
+}
+
+
+@media (min-width: 768px) {
+	.carousel-cell {
+		max-width: 19%;
+	}
+
+	.ccbtn {
+		min-width: 19%;
+	}
+
+	.carouselimg {
+		max-height: 214px;
+	}
+}

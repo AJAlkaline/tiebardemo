@@ -1,0 +1,17 @@
+@import '~sass/_variables';
+
+.bc1 {
+  padding: 20px 10px 20px 0px;
+}
+.bc2 {
+  padding: 20px 0px 20px 10px;
+}
+
+@media (max-width:$md - 1) {
+  .bc1 {
+    padding: 20px 0px 20px 0px;
+  }
+  .bc2 {
+    padding: 0px 0px 20px 0px;
+  }
+}

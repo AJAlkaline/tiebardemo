@@ -1,0 +1,22 @@
+<div class="carouselcontainer width-constrained">
+  <h1>h1 tag</h1>
+  <div class="leftspacebar"></div>
+  <p>This is a Subheader</p>
+  <div class="main-carousel">
+    <div *ngFor="let item of items" class="col-xs-6 col-sm-6 mb-2 p-1 pr-0 carousel-cell active">
+      <div class="center-block">
+        <img src="{{item.imgsrc}}" class="center-block w-100 carouselimg">
+        <h4 class="cardtext">
+          {{item.text}}
+        </h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="d-flex justify-content-around flex-wrap my-5 width-constrained">
+  <button class="darkbtn ccbtn">bestselling shirts</button>
+  <button class="darkbtn ccbtn">socks</button>
+  <button class="darkbtn ccbtn">jesse tyler ferguson</button>
+  <button class="darkbtn ccbtn">essential ties</button>
+</div>

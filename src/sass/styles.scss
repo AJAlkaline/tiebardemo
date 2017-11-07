@@ -1,0 +1,173 @@
+@import './variables';
+@import './mixins';
+
+@font-face {
+    font-family: ProximaNova-Regular;
+    src: url("/assets/webfonts/Proxima Nova Reg.eot");
+    src: url("/assets/webfonts/Proxima Nova Reg.eot?#iefix") format("embedded-opentype"),
+         url("/assets/webfonts/Proxima Nova Reg.woff") format("woff"),
+         url("/assets/webfonts/Proxima Nova Reg.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: ProximaNova-Semibold;
+    src: url("/assets/webfonts/Proxima-Nova-Semibold.eot");
+    src: url("/assets/webfonts/Proxima-Nova-Semibold.eot?#iefix") format("embedded-opentype"),
+         url("/assets/webfonts/Proxima-Nova-Semibold.woff") format("woff"),
+         url("/assets/webfonts/Proxima-Nova-Semibold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: ProximaNova-Bold;
+    src: url("/assets/webfonts/Proxima Nova Bold.eot");
+    src: url("/assets/webfonts/Proxima Nova Bold.eot?#iefix") format("embedded-opentype"),
+         url("/assets/webfonts/Proxima Nova Bold.woff") format("woff"),
+         url("/assets/webfonts/Proxima Nova Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: TradeGothicLT-CondEighteen;
+    src: url("/assets/webfonts/TradeGothicLT-CondEighteen.eot");
+    src: url("/assets/webfonts/TradeGothicLT-CondEighteen.eot?#iefix") format("embedded-opentype"),
+         url("/assets/webfonts/TradeGothicLT-CondEighteen.woff") format("woff"),
+         url("/assets/webfonts/TradeGothicLT-CondEighteen.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: TradeGothicLT-BoldCondTwenty;
+    src: url("/assets/webfonts/TradeGothicLT-BoldCondTwenty.eot");
+    src: url("/assets/webfonts/TradeGothicLT-BoldCondTwenty.eot?#iefix") format("embedded-opentype"),
+         url("/assets/webfonts/TradeGothicLT-BoldCondTwenty.woff") format("woff"),
+         url("/assets/webfonts/TradeGothicLT-BoldCondTwenty.ttf") format("truetype");
+}
+
+body {
+    color: $dark-color;
+}
+
+h1, h2, h4, h6 {
+    font-family: TradeGothicLT-BoldCondTwenty;
+    text-transform: uppercase;
+}
+
+a {
+    color: $dark-color;
+    font-family: ProximaNova-Regular;
+}
+
+a:hover {
+    color: $highlight-color;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+p {
+    font-family: ProximaNova-Regular;
+}
+
+.tg {
+    font-family: TradeGothicLT-BoldCondTwenty;
+}
+
+.pn {
+    font-family: ProximaNova-Regular;
+    font-size: 14px;
+}
+
+.tiebarbtn {
+    cursor: pointer;
+    font-family: TradeGothicLT-BoldCondTwenty;
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 7px 25px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.darkbtn {
+    @extend .tiebarbtn;
+    background-color: $dark-color;
+    border: 3px solid $dark-color;   
+    color: $light-color;
+}
+
+.darkbtn:hover {
+    background-color: $light-color;
+    color: $dark-color;
+}
+
+.transbtn {
+    @extend .tiebarbtn;
+    border: 2px solid $dark-color;
+    background-color: transparent;
+    color: $dark-color;
+}
+
+.transbtn:hover {
+    background-color: $dark-color;
+    color: $medium-color;
+}
+
+.listbtn {
+    @extend .tiebarbtn;
+    background-color: $light-color;
+    border-bottom: 1px solid $dark-color;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 0;
+    color: $dark-color;
+    margin: 1px;
+    height: 100%;
+    width: 100%;
+}
+
+.listbtn:after {
+    content: ' >';
+}
+
+.listbtn:hover {
+    background-color: $dark-color;
+    color: $light-color;
+}
+
+.darkbtn:focus, .transbtn:focus,
+.listbtn:focus {
+    border-radius: 0;
+    box-shadow: none;
+    outline: none;
+}
+
+.tiebarinput {
+    border-radius: 0;
+    border: none;
+    font-family: ProximaNova-Regular;
+    font-size: 14px;
+    outline: none;
+    padding:0;
+    -webkit-appearance: none;
+}
+
+.spacebar {
+    width: 40px;
+    border-bottom: 5px solid $dark-color;
+    margin: 13px auto;
+}
+
+.leftspacebar {
+    width: 39px;
+    height: 5px;
+    background-color: $dark-color;
+    margin-top: 14px;
+    margin-bottom: 15px
+}
+
+.width-constrained {
+    max-width: $max-width;
+    margin-right: auto;
+    margin-left: auto;
+}
+

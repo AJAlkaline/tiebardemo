@@ -1,0 +1,55 @@
+@import '~sass/variables';
+
+.largebanner {
+  background-image: url('/assets/images/pokemon4.jpg');
+  background-position-x: 50%;
+  background-position-y: 50%;
+  position:relative;
+  height: 650px;
+  width: 60%;
+}
+
+.bannerlist {
+  height: 100%;
+  padding: 0 0 0 20px;
+  width: 40%;
+}
+
+.smallbanner {
+  background-image: url('/assets/images/pokemon5.jpg');
+  height: 390px;
+  width: 100%;
+  margin: 0 0 5px;
+}
+
+.listbtngroup {
+  border-top: 1px solid $dark-color;
+  height: 260px;
+  width: 100%;
+  max-width: $max-width * 4/12 - 20;
+}
+
+.bannertitle {
+  padding: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  max-width: $max-width * 0.6;
+}
+
+@media (max-width:767px) {
+  .largebanner {
+    width: 100%;
+    height: 300px;
+  }
+
+  .bannerlist {
+    width: 100%;
+    padding: 0;
+  }
+
+  .listbtngroup {
+    max-width: 100%;
+  }
+}
